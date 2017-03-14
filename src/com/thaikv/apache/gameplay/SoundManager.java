@@ -3,7 +3,7 @@ package com.thaikv.apache.gameplay;
 import java.applet.Applet;
 import java.applet.AudioClip;
 
-public class SoundLibrary {
+public class SoundManager {
 
 	public static AudioClip START_GAME;
 	public static AudioClip FLY;
@@ -23,33 +23,33 @@ public class SoundLibrary {
 	public void setSound(boolean logic) {
 		if (logic) {
 			START_GAME = Applet.newAudioClip(getClass().getResource(
-					"/sounds/sound_vao_game.wav"));
+					"/sounds/sound_start_game.wav"));
 			FLY = Applet.newAudioClip(getClass().getResource(
-					"/sounds/sound_bay.wav"));
+					"/sounds/sound_flying.wav"));
 			MUSIC_BACKGROUND = Applet.newAudioClip(getClass().getResource(
-					"/sounds/sound_nhac_nen.wav"));
+					"/sounds/sound_background.wav"));
 			LOAD_BULLET = Applet.newAudioClip(getClass().getResource(
-					"/sounds/sound_nap_dan.wav"));
+					"/sounds/sound_add_ammunition.wav"));
 			NEW_HEART = Applet.newAudioClip(getClass().getResource(
-					"/sounds/sound_het_mau.wav"));
+					"/sounds/sound_unbloody.wav"));
 			BULLET_BOMB = Applet.newAudioClip(getClass().getResource(
 					"/sounds/sound_bomb.wav"));
 			BULLET_RK1 = Applet.newAudioClip(getClass().getResource(
-					"/sounds/sound_no_rk1.wav"));
+					"/sounds/sound_no_rocket_1.wav"));
 			BULLET_RK2 = Applet.newAudioClip(getClass().getResource(
-					"/sounds/sound_no_rk2.wav"));
+					"/sounds/sound_no_rocket_2.wav"));
 			BULLET_NORMAL_X = Applet.newAudioClip(getClass().getResource(
-					"/sounds/sound_sung1.wav"));
+					"/sounds/sound_gun_1.wav"));
 			MUSIC_BOOM = Applet.newAudioClip(getClass().getResource(
 					"/sounds/sound_no.wav"));
 			BULLET_NORMAL = Applet.newAudioClip(getClass().getResource(
-					"/sounds/sound_ten_lua.wav"));
+					"/sounds/sound_rocket.wav"));
 			DANGEROUS = Applet.newAudioClip(getClass().getResource(
-					"/sounds/sound_nguy_hiem.wav"));
+					"/sounds/sound_danger.wav"));
 			GAMVE_OVER = Applet.newAudioClip(getClass().getResource(
 					"/sounds/sound_game_over.wav"));
 			COMPETITORS = Applet.newAudioClip(getClass().getResource(
-					"/sounds/sound_dich_toi.wav"));
+					"/sounds/sound_enemy_came.wav"));
 		} else {
 			START_GAME = null;
 			FLY = null;
